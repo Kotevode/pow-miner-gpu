@@ -6,7 +6,8 @@ RUN apt-get install -y --no-install-recommends build-essential git make cmake \
      clang libgflags-dev zlib1g-dev libssl-dev \
      libreadline-dev libmicrohttpd-dev pkg-config \
      libgsl-dev python3 python3-dev python3-pip \
-     wget
+     wget \
+     systemctl
 RUN pip3 install psutil crc16 requests
 RUN apt-get install -y opencl-headers ocl-icd-libopencl1 ocl-icd-opencl-dev
 ENV CCACHE_DISABLE 1
